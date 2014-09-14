@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Role</title>
+    <meta charset='utf-8'>
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/k_main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div class="container index-container">                                                                                      i
+    <div class="row">
+        <div class="col-lg-12 user-role">
+            <div class="user-info">
+                <div class="row user-info-label">Player info:</div>
+                <div class="avatar-container">
+                    <img id="avatar" src="images/index/no-avatar.gif" alt="..." >
+                </div>
+                <div class="col-lg-6" style="padding-left: 30px;">
+                    <input id="nickname-input" class="form-control user-input" type="text" placeholder="Enter your nickname" />
+                    <input id="avatar-input" class="form-control user-input" type="text" placeholder="For custom avatar paste image URL" />
+                </div>
+                <div class="confirm-button-container">
+                    <button id="confirm-button" class="btn btn-default">I am ready</button>
+                </div>
+
+            </div>
+            <div class="user-role-container">
+                <div class="row user-info-label">Chose your playing role:</div>
+                <div class="col-lg-4">
+                    <div class="role-well text-center active">
+                        <div class="image-container">
+                            <img src="images/index/car.jpg"/>
+                        </div>
+                        <div class="role-info">
+                            <div class="btn btn-success role-button">Driver</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="role-well text-center">
+                        <div class="image-container">
+                            <img src="images/index/cycler.jpg"/>
+                        </div>
+                        <div class="role-info">
+                            <div class="btn btn-success role-button">Bicycle Rider</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="role-well text-center">
+                        <div class="image-container">
+                            <img src="images/index/pedestrian.jpg"/>
+                        </div>
+                        <div class="role-info">
+                            <div class="btn btn-success role-button">Pedestrian</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<div class="map-choice" style="display:none;">
+    <div class="control-menu">
+        <div class="container" style="padding: 5px; padding-left: 60px; position:relative;">
+            <img class="control-avatar" src=""/>
+            <span class="control-name"></span>
+            <span class="control-role"></span>
+        </div>
+    </div>
+    <div class="container index-container" style="padding-top: 120px;">
+        <div class="row">
+            <div class="col-lg-12 user-role">
+                <div class="user-info" style="min-height:440px;">
+                    <div class="row user-info-label">Choose map:</div>
+
+                    <div class="col-lg-4 col-md-4 col-xs-4 ">
+
+                        <div class="role-well map-well text-center" >
+                            <div class="image-container">
+                                <img src="images/maps/s_1.jpg">
+                                <div class="map-description">New York, NY, United States</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-xs-4 ">
+
+                        <div class="role-well map-well text-center" >
+                            <div class="image-container">
+                                <img src="images/maps/s_1.jpg">
+                                <div class="map-description">New York, NY, United States</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-xs-4 ">
+
+                        <div class="role-well map-well text-center" >
+                            <div class="image-container">
+                                <img src="images/maps/s_1.jpg">
+                                <div class="map-description">New York, NY, United States</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-choices">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Изберете маршрут</h4>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-image" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Затвори</button>
+                    <button id="confirm-modal-button" type="button" class="btn btn-primary">Играй</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+</body>
+</html>

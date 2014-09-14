@@ -1,0 +1,30 @@
+body
+{
+	background-color: rgb(1, 12, 1);
+	color: black;
+}
+h1
+{
+
+	margin-bottom: 100px;
+	color: black;
+	text-align: center;
+	font-size: 45px;
+}
+.thumbnail
+{
+	border: 2px solid #8A2EE6;
+}
+
+.modal-header
+{
+	background-color: #BAD6BA;
+}
+.modal-body
+{
+	background-color: #BAD6BA;
+}
+.modal-footer
+{
+	background-color: #BAD6BA;
+}
